@@ -7,6 +7,7 @@ systemctl restart crond
 
 gitlab-ctl stop
 kill -9 $(ps -ef| grep "opt/gitlab*"|grep -v grep |grep runsvdir|awk '{print $2}')
+kill -9 $(ps -ef |grep "/opt/gitlab" | grep -v grep|awk '{print $2}')
 rpm -e gitlab-ce
 find / -path "`pwd`" -prune -o -name "*gitlab*" -print  |xargs rm -rf
 rm -rf /run/gitlab
