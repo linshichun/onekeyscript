@@ -10,5 +10,7 @@
 ## gitlab
 在install_gitlab目录下面
 ### 安装
+./install.sh
+### 卸载
 ./uninstall.sh
 
