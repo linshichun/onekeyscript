@@ -32,4 +32,9 @@ echo "==========start gitlab"
 gitlab-ctl start
 echo "==========config gitlab"
 gitlab-ctl reconfigure >> ${SCRIPT_PATH}/20180410.log
+
+echo "==========add crontab"
+crontab -l > /tmp/crontab.bak
+echo "0 0,3,6,9,12,15,18,21 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create" >> /tmp/crontab.bak
+crontab /tmp/crontab.bak
 echo "done"
