@@ -16,6 +16,8 @@ echo "==========install rpm"
 rpm -i gitlab-ce-10.6.2-ce.0.el7.x86_64.rpm >> ${SCRIPT_PATH}/20180410.log
 echo "==========replace url"
 sed -i  '13s/gitlab.example.com/192.168.1.199/' /etc/gitlab/gitlab.rb
+sed  -r -i -e "s/# gitlab_rails\['backup_keep_time']/gitlab_rails\['backup_keep_time'] = 2592000 # /" /etc/gitlab/gitlab.rb
+
 #echo "==========config"
 #gitlab-ctl reconfigure >> /root/install_gitlab/20180410.log
 #gitlab-ctl restart
@@ -37,4 +39,5 @@ echo "==========add crontab"
 crontab -l > /tmp/crontab.bak
 echo "0 0,3,6,9,12,15,18,21 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create" >> /tmp/crontab.bak
 crontab /tmp/crontab.bak
+systemctl restart crond
 echo "done"
