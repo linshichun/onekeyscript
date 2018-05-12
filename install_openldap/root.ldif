@@ -1,0 +1,9 @@
+dn: dc=linshichun,dc=com
+objectclass: dcObject
+objectclass: organization
+o: Shichun,Inc.
+dc: linshichun
+
+dn: cn=root,dc=linshichun,dc=com
+objectclass: organizationalRole
+cn: root

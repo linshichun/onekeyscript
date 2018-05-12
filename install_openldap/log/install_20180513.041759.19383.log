@@ -1,0 +1,4 @@
+2018-05-13 04:17:14 root execute ./uninstall.sh [INFO] stop slap
+2018-05-13 04:17:14 root execute ./uninstall.sh [INFO] uninstall phpldapadmin
+2018-05-13 04:17:14 root execute ./uninstall.sh [INFO] uninstall migrationtools
+2018-05-13 04:17:14 root execute ./uninstall.sh [INFO] start to delete config file.

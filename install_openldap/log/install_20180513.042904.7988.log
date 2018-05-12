@@ -1,0 +1,17 @@
+2018-05-13 04:18:10 root execute ./install.sh [INFO] load the config file.
+2018-05-13 04:18:10 root execute ./install.sh [INFO] start to install.
+2018-05-13 04:18:10 root execute ./install.sh [INFO] start to install openldap openldap-servers openldap-devel openldap-clients migrationtools.
+2018-05-13 04:18:15 root execute sh [INFO] openldap-clients-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:18:15 root execute sh [INFO] openldap-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:18:15 root execute sh [INFO] openldap-servers-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:18:15 root execute sh [INFO] openldap-devel-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:18:15 root execute sh [INFO] openldap-servers-sql-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:18:16 root execute sh [INFO] migrationtools-47-7.el6.noarch have been installed.
+2018-05-13 04:18:16 root execute ./install.sh [INFO] genarate the password.
+2018-05-13 04:18:16 root execute ./install.sh [INFO] new pass is 111111
+2018-05-13 04:18:16 root execute ./install.sh [INFO] new pass is {SSHA}risxsH8XukRRwbLxX8x6H12DjJpZ4rRl
+2018-05-13 04:18:16 root execute ./install.sh [INFO] copy the slapd.confi file
+2018-05-13 04:18:16 root execute ./install.sh [INFO] first start the slapd
+2018-05-13 04:18:17 root execute ./install.sh [INFO] recreate the config file "slaptest -f /etc/openldap/slapd.conf -F /etc/openldap/slapd.d/"
+2018-05-13 04:18:28 root execute ./install.sh [INFO] ============================================================
+2018-05-13 04:18:28 root execute ./install.sh [INFO] start to install phpldapadmin
