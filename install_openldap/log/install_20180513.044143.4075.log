@@ -1,0 +1,8 @@
+2018-05-13 04:38:21 root execute ./install.sh [INFO] start to install.
+2018-05-13 04:38:21 root execute ./install.sh [INFO] start to install openldap openldap-servers openldap-devel openldap-clients migrationtools.
+2018-05-13 04:38:37 root execute sh [INFO] openldap-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:38:37 root execute sh [INFO] openldap-servers-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:38:37 root execute sh [INFO] openldap-devel-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:38:37 root execute sh [INFO] openldap-servers-sql-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:38:37 root execute sh [INFO] openldap-clients-2.4.40-16.el6.x86_64 have been installed.
+2018-05-13 04:38:37 root execute sh [INFO] migrationtools-47-7.el6.noarch have been installed.

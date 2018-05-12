@@ -1,0 +1,7 @@
+2018-05-13 05:51:16 root execute ./install.sh [INFO] load the config file.
+2018-05-13 05:51:16 root execute ./install.sh [INFO] start to install.
+2018-05-13 05:51:16 root execute ./install.sh [INFO] start to install openldap openldap-servers openldap-devel openldap-clients migrationtools.
+2018-05-13 05:51:18 root execute ./install.sh [INFO] genarate the password.
+2018-05-13 05:51:18 root execute ./install.sh [INFO] new pass is 111111
+2018-05-13 05:51:18 root execute ./install.sh [INFO] new pass is 
+2018-05-13 05:51:18 root execute ./install.sh [INFO] copy the slapd.confi file
