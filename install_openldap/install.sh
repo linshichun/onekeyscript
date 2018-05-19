@@ -39,6 +39,7 @@ log_info "recreate the config file \"slaptest -f /etc/openldap/slapd.conf -F /et
 rm -rf /etc/openldap/slapd.d/*
 slaptest -f /etc/openldap/slapd.conf -F /etc/openldap/slapd.d/
 chown -R ldap.ldap /etc/openldap/slapd.d/
+chkconfig slapd on
 /etc/init.d/slapd restart
 cat > root.ldif <<EOF
 dn: $cfg_suffix
@@ -63,4 +64,6 @@ yum install -y phpldapadmin
 sed -i "/Allow from ::1/aAllow from 192.168.1.100" /etc/httpd/conf.d/phpldapadmin.conf
 
 sed -i "s/^\$servers->setValue('login','attr','uid')/\/\/&/" /etc/phpldapadmin/config.php
+chkconfig httpd on
 /etc/init.d/httpd restart
+
