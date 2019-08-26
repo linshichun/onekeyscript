@@ -36,4 +36,4 @@ if [ ! -d ${home_path}/bin/  ]; then
 mkdir -p ${home_path}/bin/
 fi
 ln -s ${install_path}/bin/pip3 ${home_path}/bin/pip 
-ln -s ${install_path}/bin/python3 ${home_path}/bin/python3 
+ln -s ${install_path}/bin/python3 ${home_path}/bin/python
